@@ -19,12 +19,12 @@ $cars = json_encode($cars);
 $json1 = file_get_contents('output.json');
 
 $flag = rand(0,1);
-/*
+
 if (flag){
     $jsonNew = str_replace('x6','x7',$json1);
 }
 
-file_put_contents('output2.json',$jsonNew);*/
+file_put_contents('output2.json',$jsonNew);
 
 $json1 = file_get_contents('output.json');
 $json2 = file_get_contents('output2.json');
