@@ -10,7 +10,7 @@ $xml = simplexml_load_file('data.xml');
 echo '<br>';
 
 
-$myattributes='';
+$myattributes=[];
 foreach($xml->attributes() as $a => $b) {
     echo $a,'="',$b,"\"\n";
     if($a == 'PurchaseOrderNumber') {
