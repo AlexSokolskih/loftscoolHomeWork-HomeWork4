@@ -7,20 +7,20 @@
  */
 
 
-/*
+
 $cars['bmw']['x5'] = '200';
 $cars['bmw']['x6'] = '300';
 $cars['lada']['granta'] = '130';
 $cars['niva'] = '100';
 $cars['subary'] = '160';
 $cars = json_encode($cars);
-*/
+
 
 $json1 = file_get_contents('output.json');
 
 $flag = rand(0,1);
-
-if (flag){
+$jsonNew = $json1;
+if ($flag == 1){
     $jsonNew = str_replace('x6','x7',$json1);
 }
 
